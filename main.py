@@ -2,6 +2,7 @@
 # the open-source pygame library
 # throughout this file
 import pygame
+import sys
 
 from constants import *
 from player import Player
@@ -57,6 +58,12 @@ def main():
 
         for sprite in updatable:
             sprite.update(dt)
+        
+        for asteroid in asteroids:
+            if asteroid.collisions(player):
+                sys.exit("Game over!")
+                
+
         
 
         #restrict the fps to 60
