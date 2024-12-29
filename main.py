@@ -65,6 +65,12 @@ def main():
             sprite.update(dt)
         
         for asteroid in asteroids:
+            for bullet in bullets:
+                if bullet.collisions(asteroid):
+                    asteroid.kill()
+                    bullet.kill()
+
+
             if asteroid.collisions(player):
                 sys.exit("Game over!")
                 
