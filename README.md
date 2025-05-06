@@ -16,10 +16,40 @@ This is a simple **Asteroids-style** game built with [Pygame](https://www.pygame
 
 Install all dependencies via `requirements.txt`.
 
-## 🛠 Setup Instructions
+## 🛠 Setup Instructions for Linux or WSL
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/asteroids-game.git
+   git clone https://github.com/saifullah605/Asteroids.git
    cd Asteroids
+
+2. **Download a virtual enviroment**:
+  ```bash
+    python3 -m venv venv
+
+3. **Activate Enviroment**:
+  ```bash
+  source venv/bin/activate
+  
+you should see (venv) at the beginning of your terminal prompt
+
+4. **Install the requiremnets**:
+  ```bash
+  pip install -r requirements.txt
+
+make sure pygame is installed:
+
+  ```bash
+  python3 -m pygame
+
+
+5. **Run the Program**:
+
+
+
+
+
+
+
+    
 
